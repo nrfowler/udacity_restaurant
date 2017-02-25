@@ -2,6 +2,7 @@
 
 Full Stack Foundations
 Problem Set 1, optional assignment
+Lesson 2 optional assignment
 
 Dependencies:
 Python
