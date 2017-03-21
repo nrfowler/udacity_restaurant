@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}All Restaurants{% endblock %}
+{% block head %}
+<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+<style type="text/css">
+  .label {text-align: right}
+  .error {color: red}
+  /*.link {color: black}*/
+  article{ background-color: #f0f5f5;
+  border-radius: 10px;
+  padding-left: 10px;
+padding-bottom: 10px;}
+h1{
+  font-family: 'Shrikhand', cursive;
+}
+  h3{ text-decoration: underline;}
+  .header{
+    text-align: center;
+  }
+</style>
+{% endblock %}
+{% block content %}
+<div class="header">
+
+<h1>All Restaurants</h1>
+<p>
+
+</p>
+<p>
+
+</p>
+<p>
+  <a href="/newrest" >Create New Restaurant</a>
+
+</p>
+  <a href="/logout" >Logout</a>
+</div>
+
+<hr />
+
+  {% for rest in restaurants %}
+  <article>
+    <h2><a href="/rest/{{rest.key().id()}}" >{{rest.name}}</a></h2>
+  </article>
+  {% endfor %}
+  <hr />
+{% endblock %}
