@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {% block head %}
-    <style type="text/css">
-      .label {text-align: right}
-      .error {color: red}
-      article{ background-color: #f0f5f5;
+  <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+  <style type="text/css">
+    .label {text-align: right}
+    .error {color: red}
+    /*.link {color: black}*/
+    article{
+      background-color: #f0f5f5;
       border-radius: 10px;
       padding-left: 10px;
-    padding-bottom: 10px;}
-      h3{ text-decoration: underline;}
-    </style>
-    <title>{% block title %}{% endblock %} - Channit</title>
-    {% endblock %}
+      padding-bottom: 10px;}
+    h1{
+      font-family: 'Shrikhand', cursive;
+    }
+    h3{
+      text-decoration: underline;}
+    .header{
+      text-align: center;
+    }
+  </style>
+    <title>Restaurant Menu Viewer</title>
 </head>
 <body>
     <div id="content">{% block content %}{% endblock %}</div>
     <div id="footer">
         {% block footer %}
-        &copy; Copyright 2017 by <a href="http://nrfowler.github.io">Nathan Fowler</a>. new feature:  URLs for posts
+        Developed by <a href="http://nrfowler.github.io">Nathan Fowler</a>.
         {% endblock %}
     </div>
 </body>
