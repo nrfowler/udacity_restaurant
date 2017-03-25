@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="header">
+
+<h1>All Restaurants</h1>
+<a href="/newrest" >Create New Restaurant</a>
+<hr />
+  {% for rest in restaurants %}
+  <article>
+    <h2><a href="/rest/{{rest.id}}" >{{rest.name}}</a></h2>
+    <a href="/editrest/{{rest.id}}" >Edit</a>
+    <a href="/delrest/{{rest.id}}" >Delete</a>
+  </article>
+  {% endfor %}
+  <hr />
+{% endblock %}
