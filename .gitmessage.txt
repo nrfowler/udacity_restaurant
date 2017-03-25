@@ -1,3 +1,4 @@
-feat:
+doc: Update the Readme
+refactor: Delete unneeded files
 
-Deleted the puppies folder because it was simple exercise. Added templates for all pages. 
+Filled in installation and usage instructions. Deleted restaurant1 folder.
