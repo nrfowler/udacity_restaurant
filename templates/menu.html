@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="header">
-<h1>{{restaurant.name}}</h1>
-<p>
-  <a href="/newitem/{{restaurant.id}}" >Create New Menu Item</a>
-</p>
+  <h1>{{restaurant.name}}</h1>
+    <p>
+      <a href="/newitem/{{restaurant.id}}" >Create New Menu Item</a>
+    </p>
 </div>
 <hr />
   {% for item in items %}

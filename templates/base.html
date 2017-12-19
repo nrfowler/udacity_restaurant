@@ -22,12 +22,16 @@
   </style>
     <title>Restaurant Menu Viewer</title>
 </head>
-<body>
-    <div id="content">{% block content %}{% endblock %}</div>
-    <div id="footer">
-        {% block footer %}
-        Developed by <a href="http://nrfowler.github.io">Nathan Fowler</a>.
-        {% endblock %}
-    </div>
-</body>
+  <body>
+      <div id="banner">
+        <a href="/login">Log In/Sign In</a>
+        <a href="/logout">Log Out</a>
+      </div>
+      <div id="content">{% block content %}{% endblock %}</div>
+      <div id="footer">
+          {% block footer %}
+          Developed by <a href="http://nrfowler.github.io">Nathan Fowler</a>.
+          {% endblock %}
+      </div>
+  </body>
 </html>
